@@ -1,0 +1,227 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Witch
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css")
+    link(rel="stylesheet", href="styles.css")
+    style.
+      .scrollable-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap;
+        margin-bottom: 20px;
+      }
+      ::-webkit-scrollbar {
+        width: 1px;
+        height:1px
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+      }
+ 
+      ::-webkit-scrollbar-thumb {
+        background: blue; 
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: white; 
+      }
+      .card {
+        display: inline-block;
+        margin-right: 10px;
+        width: 250px;
+        overflow: hidden;
+        color:black;
+      }
+      .card-img-top {
+        max-width: 100%;
+        height: auto;
+      }
+      body{
+        back
+      }
+  body
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light
+      .container
+        a.navbar-brand(href="/") Witch 
+        button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarNav", aria-controls="navbarNav", aria-expanded="false", aria-label="Toggle navigation")
+          span.navbar-toggler-icon
+        #navbarNav.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto
+            li.nav-item
+              a.nav-link(href="/") Home
+            li.nav-item
+              a.nav-link(href="/movies") Movies
+            li.nav-item
+              a.nav-link(href="/webseries") Web Series 
+    br
+    br
+    //- ------------------------------------------   THIS IS MOVIES LIST ---------------------------------------------------
+    .container
+      h3 Movies
+      .scrollable-container
+        a(href=`/movie/${mdata[9]._id}`)
+          .card
+            img.card-img-top.imgcenter(src=mdata[9].posterImageUrl, alt="Card image")
+            .card-body
+              h5.card-title #{mdata[9].title}
+              p.card-text #{mdata[9].movieDescription}
+        a(href=`/movie/${mdata[0]._id}`)
+          .card
+            img.card-img-top.imgcenter(src=mdata[0].posterImageUrl, alt="Card image")
+            .card-body
+              h5.card-title #{mdata[0].title}
+              p.card-text #{mdata[0].movieDescription}
+        a(href=`/movie/${mdata[1]._id}`)
+          .card
+            img.card-img-top(src=mdata[1].posterImageUrl, alt="Card image")
+            .card-body
+              h5.card-title #{mdata[1].title}
+              p.card-text #{mdata[1].movieDescription}
+        a(href=`/movie/${mdata[2]._id}`)    
+          .card
+            img.card-img-top(src=mdata[2].posterImageUrl, alt="Card image")
+            .card-body
+              h5.card-title #{mdata[2].title}
+              p.card-text #{mdata[2].movieDescription}
+        a(href=`/movie/${mdata[3]._id}`)
+          .card
+            img.card-img-top(src=mdata[3].posterImageUrl, alt="Card image")
+            .card-body
+              h5.card-title #{mdata[3].title}
+              p.card-text #{mdata[3].movieDescription}
+        a(href=`/movie/${mdata[4]._id}`)
+          .card
+            img.card-img-top(src=mdata[4].posterImageUrl, alt="Card image")
+            .card-body
+              h5.card-title #{mdata[4].title}
+              p.card-text #{mdata[4].movieDescription}
+        a(href=`/movie/${mdata[5]._id}`)
+          .card
+            img.card-img-top(src=mdata[5].posterImageUrl, alt="Card image")
+            .card-body
+              h5.card-title #{mdata[5].title}
+              p.card-text #{mdata[5].movieDescription}
+        a(href=`/movie/${mdata[6]._id}`)
+          .card
+            img.card-img-top(src=mdata[6].posterImageUrl, alt="Card image")
+            .card-body
+              h5.card-title #{mdata[6].title}
+              p.card-text #{mdata[6].movieDescription}
+        a(href=`/movie/${mdata[7]._id}`)
+          .card
+            img.card-img-top(src=mdata[7].posterImageUrl, alt="Card image")
+            .card-body
+              h5.card-title #{mdata[7].title}
+              p.card-text #{mdata[7].movieDescription}
+        a(href=`/movie/${mdata[8]._id}`)
+          .card
+            img.card-img-top(src=mdata[8].posterImageUrl, alt="Card image")
+            .card-body
+              h5.card-title #{mdata[8].title}
+              p.card-text #{mdata[8].movieDescription}
+    //- -----------------------------------------------------   THIS IS WEB SERIES PAGE   ----------------------------------------
+    .container
+      h3 Web Series
+      .scrollable-container
+        a(href=`/webseries/${wdata[0]._id}`)
+          .card
+            img.card-img-top.imgcenter(src=wdata[0].posterImageUrl, alt="Card image")
+            .card-body
+              h5.card-title #{wdata[0].title}
+              p.card-text #{wdata[0].webSeriesDescription}
+        a(href=`/webseries/${wdata[1]._id}`)
+          .card
+            img.card-img-top(src=wdata[1].posterImageUrl, alt="Card image")
+            .card-body
+              h5.card-title #{wdata[1].title}
+              p.card-text #{wdata[1].webSeriesDescription}
+        a(href=`/webseries/${wdata[2]._id}`)
+          .card
+            img.card-img-top(src=wdata[2].posterImageUrl, alt="Card image")
+            .card-body
+              h5.card-title #{wdata[2].title}
+              p.card-text #{wdata[2].webSeriesDescription}
+        a(href=`/webseries/${wdata[3]._id}`)
+          .card
+            img.card-img-top(src=wdata[3].posterImageUrl, alt="Card image")
+            .card-body
+              h5.card-title #{wdata[3].title}
+              p.card-text #{wdata[3].webSeriesDescription}
+        a(href=`/webseries/${wdata[4]._id}`)
+          .card
+            img.card-img-top(src=wdata[4].posterImageUrl, alt="Card image")
+            .card-body
+              h5.card-title #{wdata[4].title}
+              p.card-text #{wdata[4].webSeriesDescription}
+        a(href=`/webseries/${wdata[5]._id}`)
+          .card
+            img.card-img-top(src=wdata[5].posterImageUrl, alt="Card image")
+            .card-body
+              h5.card-title #{wdata[5].title}
+              p.card-text #{wdata[5].webSeriesDescription}
+        a(href=`/webseries/${wdata[6]._id}`)
+          .card
+            img.card-img-top(src=wdata[6].posterImageUrl, alt="Card image")
+            .card-body
+              h5.card-title #{wdata[6].title}
+              p.card-text #{wdata[6].webSeriesDescription}
+        a(href=`/webseries/${wdata[7]._id}`)
+          .card
+            img.card-img-top(src=wdata[7].posterImageUrl, alt="Card image")
+            .card-body
+              h5.card-title #{wdata[7].title}
+              p.card-text #{wdata[7].webSeriesDescription}
+        a(href=`/webseries/${wdata[8]._id}`)
+          .card
+            img.card-img-top(src=wdata[8].posterImageUrl, alt="Card image")
+            .card-body
+              h5.card-title #{wdata[8].title}
+              p.card-text #{wdata[8].webSeriesDescription}
+        a(href=`/webseries/${wdata[7]._id}`)
+          .card
+            img.card-img-top(src=wdata[7].posterImageUrl, alt="Card image")
+            .card-body
+              h5.card-title #{wdata[7].title}
+              p.card-text #{wdata[7].webSeriesDescription}
+    .container
+      h3 Serials
+      .scrollable-container
+        a(href=`/serials/${sdata[0]._id}`)
+          .card
+            img.card-img-top.imgcenter(src=sdata[0].posterImageUrl, alt="Card image")
+            .card-body
+              h5.card-title #{sdata[0].title}
+              p.card-text #{sdata[0].movieDescription}
+        a(href=`/serials/${sdata[1]._id}`)
+          .card
+            img.card-img-top(src=sdata[1].posterImageUrl, alt="Card image")
+            .card-body
+              h5.card-title #{sdata[1].title}
+              p.card-text #{sdata[1].movieDescription}
+        a(href=`/serials/${sdata[2]._id}`)
+          .card
+            img.card-img-top(src=sdata[2].posterImageUrl, alt="Card image")
+            .card-body
+              h5.card-title #{sdata[2].title}
+              p.card-text #{sdata[2].movieDescription}
+        a(href=`/serials/${sdata[3]._id}`)
+          .card
+            img.card-img-top(src=sdata[3].posterImageUrl, alt="Card image")
+            .card-body
+              h5.card-title #{sdata[3].title}
+              p.card-text #{sdata[3].movieDescription}
+        //- a(href=`/webseries/${wdata[4]._id}`)
+        //-   .card
+        //-     img.card-img-top(src=wdata[4].posterImageUrl, alt="Card image")
+        //-     .card-body
+        //-       h5.card-title #{wdata[4].title}
+        //-       p.card-text #{wdata[4].webSeriesDescription}
+        
+
+    script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js")
+    script(src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js")
